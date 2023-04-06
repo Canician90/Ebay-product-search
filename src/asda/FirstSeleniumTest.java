@@ -23,7 +23,9 @@ System.setProperty ("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe")
 		driver.get("https://www.ebay.com/");
 		driver.manage().window().maximize();
         driver.findElement(By.cssSelector("#gh-ac")).sendKeys("JBL Speakers");
+        Thread.sleep(1000);
         driver.findElement(By.cssSelector("#gh-btn")).click();
+        Thread.sleep(1000);
         driver.findElement(By.cssSelector("#gh-p-1 > a")).click();
         driver.navigate().back();
 		Thread.sleep(1000);
@@ -35,10 +37,6 @@ System.setProperty ("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe")
         
 
     }
-
-    
-    
-        
     public static void main(String[] args) throws InterruptedException {
 
         FirstSeleniumTest obj = new FirstSeleniumTest(); 
@@ -57,3 +55,6 @@ System.setProperty ("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe")
 		
 	}
     }
+    
+    
+  
